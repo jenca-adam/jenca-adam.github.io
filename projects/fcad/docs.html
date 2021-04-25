@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>FCaD 3.2.0 Documentation</title>
+    <link rel="stylesheet" href="../../css/main-style.css">
+    <link rel="icon" type="image/ico" href="../../pics/favicon.ico">
+  </head>
+  <body>
+    <header><h1><b>FCaD 3.2.0 Documentation</b></h1></header>
+    <div> 
+    <hr>
+    <h4>Table of contents</h4>
+
+    <p>1.0. <a href="#hti">Installation</a></p>
+    <p>1.1. <a href="#cls">Command line script</a></p>
+    <p class="indent">1.1.1 <a href="#clc">Commands</a></p>
+    <p> 1.2 <a href="#fa">FCaD Application</a></p>
+    <hr>
+    </div>
+    <main><section ><div id="hti"><h3>1.0. How to install</h3>
+      <main>
+      Click "Download ZIP" on <a href="main.html">homepage of FCaD</a>.<br>
+      File named <strong>fcad-v3.2.0.zip</strong> will be downloaded.<br>
+      Go to your download folder and unzip the file.It will probably take few seconds.
+      If not installed(Only on few distributions of linux) install <a href="https://python.org/download/">Python 3.8 +</a>.
+      If installed, check version of Python:
+      <pre>
+      <code lang="python">[user@hostname ~]$ python --version&nbsp;&nbsp;&nbsp;
+      </code>
+      </pre>
+      If output is less than Python 3.8, update your system or <a href="https://python.org/download/">install Python 3.8 + manually</a>.
+      Now you are ready to encrypt your first file! 
+      </main></div></sectioN>
+      <section ><div id="cls"><h3>1.1.Command line script</h3>
+      <main>
+      After unzipping, you will find file <tt>runner.py</tt>. Execute it:
+      <pre>
+      <code>
+      [user@hostname ~]$ python runner.py
+      This is FCaD version 3.2.0. 
+      type "help" for list of commands, press CTRL-D or CTRL-C to exit  
+      FCaD-3.2.0-$</code>
+      </pre>
+      <section id="clc"><h4>1.1.1 Commands</h4>
+      <div>
+      <main>
+      <ul>
+      <li><strong>new_key</strong> <div class="indent">
+        <p>Syntax:<tt>new_key [filename]</tt></p>
+        <div>Generates new key file and writes it into <tt>[filename]</tt></div>
+        <h4>Example</h4>
+        <div class="indent">We want FCaD to generate new key file <tt>key.fdk</tt>.
+        <pre>
+        <code>
+        [user@hostname ~]$ python runner.py
+        This is FCaD version 3.2.0. 
+        type "help" for list of commands, press CTRL-D or CTRL-C to exit  
+        FCaD-3.2.0-$ new_key key.fdk
+        </code>
+        </pre>
+        New binary file <tt>key.fdk</tt> will be created, its size would be 65537 bytes and first byte <tt>'\xff'</tt>:
+        <img class="screenshot" src="../../pics/doc-0.png"/>
+        </div></div>
+      <li><strong>encrypt</strong> <div class="indent">
+        <p>Syntax:<tt>encrypt [filename] [key]</tt></p>
+        <div>Encrypts <tt>[filename]</tt> according to <tt>[key]</tt></div>
+        <h4>Example</h4>
+        <div class="indent">We want FCaD to encrypt <tt>important.txt</tt> according to <tt>key.fdk</tt> we created just now.
+        <img class="screenshot" src="../../pics/doc-1.png"/>
+        <pre>
+        <code>
+        [user@hostname ~]$ python runner.py
+        This is FCaD version 3.2.0. 
+        type "help" for list of commands, press CTRL-D or CTRL-C to exit  
+        FCaD-3.2.0-$ encrypt important.txt key.fdk
+        </code>
+        </pre>
+        <tt>important.txt</tt> now looks like:
+        <img class="screenshot" src="../../pics/doc-2.png"/>
+        </div></div>
+  
+      </li>
+      <li><strong>decrypt</strong> <div class="indent">
+        <p>Syntax:<tt>decrypt [filename] [key]</tt></p>
+        <div>Decrypts <tt>[filename]</tt> according to <tt>[key]</tt>
+        <p class="warning">This may take long time for large files(e.g. images; databases...)</p></div>
+        <h4>Example</h4>
+        <div class="indent">We want FCaD to decrypt encrypted <tt>important.txt</tt> according to <tt>key.fdk</tt>.
+        <img class="screenshot" src="../../pics/doc-2.png"/>
+        <pre>
+        <code>
+        [user@hostname ~]$ python runner.py
+        This is FCaD version 3.2.0. 
+        type "help" for list of commands, press CTRL-D or CTRL-C to exit  
+        FCaD-3.2.0-$ decrypt important.txt key.fdk
+        </code>
+        </pre>
+        You can see <tt>important.txt</tt> is deciphered:
+        <img class="screenshot" src="../../pics/doc-3.png"/>
+        </div></div>
+  
+      </li>
+
+      </ul>
+      </main><div></section>
+      </maiN></div></section>
+    <section id="fa"><h3>1.2. FCaD application</h3>
+    <main>
+    <p class="warning">This is an unstable feature in development and it has <u><a class="warning" style="{cursor:pointer;text-decoration:underline}" href="https://github.com/jenca-adam/fcad/issues/1">OPEN ISUES</a></u></p>
+    <div>
+    Execute with <tt>./runapp.sh</tt><br>
+       <strong class="important">Only encrypting and generating key files support</strong>
+        <img class="screenshot" src="../../pics/doc-4.png"/> 
+
+    <section><h4>Encrypting</h4>
+    <main>
+    <div class="indent">
+    <ol>
+    <li>
+    Click "Encrypt".
+    <img class="screenshot" src="../../pics/doc-5.png"/>
+    </li>
+    <li>
+    Click "Encrypt File" and write file name in dialog box that opened. Then click "OK"
+    <img class="screenshot" src="../../pics/doc-6.png"/>
+
+    </li>
+    Dialog box will be replaced by another. Enter key file name and click "OK"
+    <img class="screenshot" src="../../pics/doc-7.png"/>
+    File will be enciphered.
+     <img class="screenshot" src="../../pics/doc-2.png"/>
+    <li>
+    </li>
+    </ol>
+    </div>
+    </main>
+    </section>
+    <section><h4>Generating key</h4>
+    <main>
+    <ol>
+    <li>
+    Click "New key".
+    <img class="screenshot" src="../../pics/doc-8.png"/>
+    </li>
+    <li> Click "Generate" and  write key file name in dialog box that opened. Then click "OK"</li>
+    <p class="warning"><u><a class="warning" style="{cursor:pointer;}"href="https://github.com/jenca-adam/fcad/issues/1">Known bug:</a></u> when you click on "Generate", for some reason will screen change to <u><a class="warning" style="{cursor:pointer;}"href="../../pics/doc-5.png">Encryptor screen</a></u></p><a href="../../bugs/1.mkv">(video)</a>
+ </u>
+    <img class="screenshot" src="../../pics/doc-9.png"/>
+    Key file will be generated</li>
+    <img class="screenshot" src="../../pics/doc-10.png"/>
+
+    </ol>
+
+    </main>
+    </section>
+    </div>
+    </main></section>
+
+    </main>
+    
+    <footer></footer>
+  </body>
+</html>

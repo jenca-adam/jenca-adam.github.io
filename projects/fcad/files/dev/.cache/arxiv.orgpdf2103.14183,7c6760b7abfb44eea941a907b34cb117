@@ -1,0 +1,19 @@
+status: 301
+date: Tue, 30 Mar 2021 09:42:40 GMT
+server: Apache
+location: https://arxiv.org/pdf/2103.14183
+content-length: 299
+content-type: text/html; charset=iso-8859-1
+set-cookie: BIGipServer~SVCCENTER~arxiv-web.arxiv.org_http_pool=rd822o00000000000000000000ffff8054040fo80; path=/; Httponly
+-x-permanent-redirect-url: https://arxiv.org/pdf/2103.14183
+content-location: http://arxiv.org/pdf/2103.14183
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://arxiv.org/pdf/2103.14183">here</a>.</p>
+<hr>
+<address>Apache Server at arxiv.org Port 80</address>
+</body></html>

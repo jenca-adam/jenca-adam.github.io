@@ -1,0 +1,12 @@
+status: 301
+date: Tue, 30 Mar 2021 07:48:51 GMT
+server: Apache
+strict-transport-security: max-age=31536000
+set-cookie: browser=109.230.50.234.1617090531281129; path=/; max-age=946080000; domain=.arxiv.org
+location: https://arxiv.org/pdf/1901.02390
+content-type: application/x-eprint
+-x-permanent-redirect-url: https://arxiv.org/pdf/1901.02390
+content-location: https://arxiv.org/pdf/1901.2390.pdf
+
+Location: /PS_cache/arxiv/pdf/1901/1901.02390v2.pdf
+

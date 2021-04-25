@@ -1,0 +1,12 @@
+status: 301
+date: Tue, 30 Mar 2021 08:21:26 GMT
+server: Apache
+strict-transport-security: max-age=31536000
+set-cookie: browser=109.230.50.234.1617092486072425; path=/; max-age=946080000; domain=.arxiv.org
+location: https://arxiv.org/pdf/2003.07629
+content-type: application/x-eprint
+-x-permanent-redirect-url: https://arxiv.org/pdf/2003.07629
+content-location: https://arxiv.org/pdf/2003.7629.pdf
+
+Location: /PS_cache/arxiv/pdf/2003/2003.07629v1.pdf
+

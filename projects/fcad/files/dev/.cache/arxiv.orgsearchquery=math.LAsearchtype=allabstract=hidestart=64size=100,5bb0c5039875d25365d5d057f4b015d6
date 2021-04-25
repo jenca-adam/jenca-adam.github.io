@@ -1,0 +1,19 @@
+status: 308
+date: Tue, 30 Mar 2021 09:15:29 GMT
+server: Apache
+strict-transport-security: max-age=31536000
+location: https://arxiv.org/search/?query=math.LA&searchtype=all&abstract=hide&start=64&size=100
+set-cookie: browser=109.230.50.234.1617095729364335; path=/; max-age=946080000; domain=.arxiv.org
+vary: Accept-Encoding,User-Agent
+content-type: text/html; charset=utf-8
+content-length: 411
+-content-encoding: gzip
+-x-permanent-redirect-url: https://arxiv.org/search/?query=math.LA&searchtype=all&abstract=hide&start=64&size=100
+content-location: https://arxiv.org/search?query=math.LA&searchtype=all&abstract=hide&start=64&size=100
+-varied-accept-encoding: gzip, deflate
+-varied-user-agent: Python-httplib2/0.19.0 (gzip)
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to target URL: <a href="https://arxiv.org/search/?query=math.LA&amp;searchtype=all&amp;abstract=hide&amp;start=64&amp;size=100">https://arxiv.org/search/?query=math.LA&amp;searchtype=all&amp;abstract=hide&amp;start=64&amp;size=100</a>.  If not click the link.
