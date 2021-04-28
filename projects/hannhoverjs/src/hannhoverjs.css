@@ -1,11 +1,13 @@
-#hannhoverjs-wrapper{
+#hannhover-wrapper{
 	display:inline;
+ 	min-width:100%;
+	height:auto;
 }
-#hannhoverjs-container{
+#hannhover-container{
 	border-right:1px solid grey;
 	display:block;
 }
-#hannhoverjs-container >a.hannhoverjs-link{
+#hannhover-container >a.hannhoverjs-link{
  	border-bottom:1px solid black;
 }
 
