@@ -8,13 +8,13 @@
 	display:block;
 	width:50%;
 	float:left;
-	min-height:500px;
+	min-height:25%;
 
 }
 #hannhover-result{
 	width:50%;
 	float:right;
-	min-height:500px;
+	min-height:25%;
 }
 
 #hannhover-container >a.hannhoverjs-link{
