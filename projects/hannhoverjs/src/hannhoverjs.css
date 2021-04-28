@@ -6,7 +6,13 @@
 #hannhover-container{
 	border-right:1px solid grey;
 	display:block;
+	width:50%;
+	float:left;
 }
+#hannhover-result{
+	width:50%;
+	float:right;}
+
 #hannhover-container >a.hannhoverjs-link{
  	border-bottom:1px solid black;
 }
