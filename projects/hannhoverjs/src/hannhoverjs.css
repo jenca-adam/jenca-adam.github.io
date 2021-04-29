@@ -1,4 +1,6 @@
 #hannhover-wrapper{
+	position:relative;
+	top:0px;
 	display:inline-block;
  	min-width:100%;
 	min-height:500px;
@@ -12,6 +14,8 @@
 
 }
 #hannhover-result{
+	display:block;
+
 	width:50%;
 	float:right;
 	min-height:25%;
