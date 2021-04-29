@@ -1,5 +1,5 @@
 function hideResult(){
-	$('#hanhover-result').delay(10).hide()
+	document.getElementById('hannhover-result').style.display='none';
 }
 	
 $('#hannhover-result').hide();
