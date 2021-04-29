@@ -1,7 +1,7 @@
 #hannhover-wrapper{
 	position:relative;
 	top:0px;
-	display:inline-block;
+	display:inline;
  	min-width:100%;
 	min-height:500px;
 }
