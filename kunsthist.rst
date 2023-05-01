@@ -50,5 +50,5 @@ Po vymretí Stiborovcov sa novými majiteľmi stali Bánfiovci. Tí hrad prestav
 Obrázky
 ^^^^^^^
 
-https://www.tsk.sk/buxus/images/content/7divovTSK/Beckov_hrad.jpg
+.. image:: https://www.tsk.sk/buxus/images/content/7divovTSK/Beckov_hrad.jpg
 
