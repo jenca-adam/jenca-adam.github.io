@@ -16,8 +16,11 @@ Obrázky
 ^^^^^^^
 
 napr. 
+
 .. image:: pics/bojn1.jpg
+
 alebo
+
 .. image:: pics/bojn2.jpg
 
 
