@@ -38,7 +38,7 @@ Dnes je hrad sprístupnený návštevníkom a stal sa jednou z dominánt Považi
 Obrázky
 ^^^^^^^
 
-https://lh3.googleusercontent.com/p/AF1QipMmt62mPCf9zXR1UwT3hzlL1WR0FP2YDlelH1vq=s680-w680-h510
+.. image:: pics/tren1.jpg
 
 Hrad Beckov
 ===========
